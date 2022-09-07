@@ -37,6 +37,8 @@ RUN set -xe \
     && if [[ ${TARGETPLATFORM} = "linux/arm/v7" ]]; then apt install -y cargo; fi \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip install --no-cache-dir ipython \
+                   pytz \
+                   pymongo \
                    https://github.com/scrapy/scrapy/archive/refs/tags/$SCRAPY_VERSION.zip \
                    https://github.com/scrapy/scrapyd/archive/refs/tags/$SCRAPYD_VERSION.zip \
                    https://github.com/scrapy/scrapyd-client/archive/refs/tags/$SCRAPYD_CLIENT_VERSION.zip \
