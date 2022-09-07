@@ -39,6 +39,7 @@ RUN set -xe \
     && pip install --no-cache-dir ipython \
                    pytz \
                    pymongo \
+                   dnspython \
                    https://github.com/scrapy/scrapy/archive/refs/tags/$SCRAPY_VERSION.zip \
                    https://github.com/scrapy/scrapyd/archive/refs/tags/$SCRAPYD_VERSION.zip \
                    https://github.com/scrapy/scrapyd-client/archive/refs/tags/$SCRAPYD_CLIENT_VERSION.zip \
