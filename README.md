@@ -1,8 +1,6 @@
 # scrapyd-docker project
 
-[![](https://github.com/easypi/docker-scrapyd/actions/workflows/build.yaml/badge.svg)](https://github.com/EasyPi/docker-scrapyd)
-
-[![](http://dockeri.co/image/easypi/scrapyd)](https://hub.docker.com/r/easypi/scrapyd)
+## This project is almost enirely copied from https://github.com/EasyPi/docker-scrapyd
 
 [scrapy][1] is an open source and collaborative framework for extracting the
 data you need from websites. In a fast, simple, yet extensible way.
