@@ -1,10 +1,10 @@
-version: "0.1"
+version: "0.2"
 services:
   scrapyd:
     image: barni363hun/scrapyd
     ports:
       - "6800:6800"
     volumes:
-      - ./data:/var/lib/scrapyd
+      - ./data:/var/lib/scrapyd/del/
       - /usr/local/lib/python3.9/dist-packages
     restart: unless-stopped
