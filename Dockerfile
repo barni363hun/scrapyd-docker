@@ -63,8 +63,7 @@ RUN set -xe \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ./scrapyd.conf /etc/scrapyd/
-COPY ./egg.egg /etc/scrapyd/
-VOLUME /etc/scrapyd/del /var/lib/scrapyd/del/
+COPY ./1661270741.egg /etc/scrapyd/
 EXPOSE 6800
 
 ENTRYPOINT ["tini", "--"]
