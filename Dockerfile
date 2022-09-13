@@ -69,4 +69,4 @@ COPY ./1661270741.egg /etc/scrapyd/
 EXPOSE 6800
 
 ENTRYPOINT ["tini", "--"]
-CMD ["scrapyd", "--pidfile=", "--build-egg=myproject.egg"]
+CMD ["scrapyd", "--pidfile=", "--build-egg=bestjob.egg"]
