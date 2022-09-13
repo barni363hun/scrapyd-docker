@@ -63,8 +63,10 @@ RUN set -xe \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ./scrapyd.conf /etc/scrapyd/
+RUN mkdir -p eggs/bestjob
+COPY ./1661270741.egg eggs/bestjob/1_0.egg
 COPY ./1661270741.egg /etc/scrapyd/
 EXPOSE 6800
 
 ENTRYPOINT ["tini", "--"]
-CMD ["scrapyd", "--pidfile="]
+CMD ["scrapyd", "--pidfile=", "--build-egg=myproject.egg"]
