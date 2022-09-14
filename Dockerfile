@@ -70,4 +70,4 @@ EXPOSE 6801
 
 ENTRYPOINT ["tini", "--"]
 CMD ["ls"]
-CMD ["scrapyd", "--pidfile=",]
+CMD ["scrapyd", "--pidfile="]
