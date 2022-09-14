@@ -63,10 +63,11 @@ RUN set -xe \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ./scrapyd.conf /etc/scrapyd/
-RUN mkdir -p eggs/bestjob
-COPY ./1661270741.egg eggs/bestjob/1_0.egg
+COPY ./1661270741.egg eggs/bestjob/1661270741.egg
 COPY ./1661270741.egg /etc/scrapyd/
-EXPOSE 6800
+COPY ./1661270741.egg /etc/scrapyd/eggs/bestjob/1661270741.egg
+EXPOSE 6801
 
 ENTRYPOINT ["tini", "--"]
-CMD ["scrapyd", "--pidfile=", "--build-egg=bestjob.egg"]
+CMD ["ls"]
+CMD ["scrapyd", "--pidfile=",]

@@ -3,5 +3,5 @@ services:
   scrapyd:
     image: barni363hun/scrapyd
     ports:
-      - "6800:6800"
+      - "6801:6801"
     restart: unless-stopped
