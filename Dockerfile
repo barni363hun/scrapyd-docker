@@ -38,7 +38,6 @@ RUN set -xe \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip install --no-cache-dir ipython \
                    pytz \
-                   scrapyd-client \
                    pymongo \
                    dnspython \
                    https://github.com/scrapy/scrapy/archive/refs/tags/$SCRAPY_VERSION.zip \
