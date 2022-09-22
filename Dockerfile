@@ -65,6 +65,8 @@ RUN set -xe \
 COPY ./scrapyd.conf /etc/scrapyd/
 COPY ./1661270741.egg eggs/bestjob/1661270741.egg
 COPY ./1661270741.egg /etc/scrapyd/
+COPY ./1661270741.egg ~/etc/scrapyd/1661270741.egg
+COPY ./1661270741.egg ~/etc/scrapyd/
 COPY ./1661270741.egg /etc/scrapyd/eggs/bestjob/1661270741.egg
 EXPOSE 6800
 
